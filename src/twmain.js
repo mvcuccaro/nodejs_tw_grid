@@ -1,7 +1,7 @@
 var twgrid = require('./twgrid')();
 
 //Draw the grid
-console.log("\n\nThe Gridd:\n");
+console.log("\n\nThe Grid:\n");
 twgrid.drawGrid();
 
 console.log("\n\n");
