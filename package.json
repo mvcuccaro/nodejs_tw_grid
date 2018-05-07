@@ -1,0 +1,20 @@
+{
+  "name": "nodejs_tw_grid",
+  "version": "1.0.0",
+  "description": "A simple game grid",
+  "main": "src/twmain.js",
+  "scripts": {
+    "start" : "node src/twmain.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvcuccaro/nodejs_tw_grid.git"
+  },
+  "author": "mvcuccaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvcuccaro/nodejs_tw_grid/issues"
+  },
+  "homepage": "https://github.com/mvcuccaro/nodejs_tw_grid#readme"
+}
