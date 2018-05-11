@@ -7,6 +7,9 @@ getTwGrid = function(arg_init = {}){
 	//load a static grid if passed in arg_init
 	if( arg_init.grid ){
 		twgrid.grid = arg_init.grid;
+
+		//since we dont have an items per row - extrapolate it.
+		twgrid.items_per_row = twgrid[0].length;
 	} else {
 		twgrid.cell_count = arg_init.cell_count ? arg_init.cell_count : 100;  //get arg_init value or use 100
 		var sequential = Array.apply(null, {length: twgrid.cell_count}).map(Number.call, Number);
