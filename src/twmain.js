@@ -1,8 +1,19 @@
-var twgrid = require('./twgrid')();
-
-//Draw the grid
-console.log("\n\nThe Grid:\n");
+var twgrid = require('./twgrid')({cell_count:20, items_per_row:4});
+console.log('A custom size random grid');
 twgrid.drawGrid();
+
+console.log('\n\nA static grid');
+twgrid = require('./twgrid')({grid: [[1,2,3], [4,5,6]]});
+twgrid.drawGrid();
+
+
+console.log('a hardcoded random grid')
+twgrid = require('./twgrid')();
+//Draw the grid
+console.log("\nHardcoded size Random Grid:\n");
+twgrid.drawGrid();
+
+
 
 console.log("\n\n");
 
