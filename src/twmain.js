@@ -1,13 +1,18 @@
 var twgrid = require('./twgrid');
+
+//an random grid initiliazed with properties. 
 mygrid = twgrid({cell_count:20, items_per_row:4});
 console.log('A custom size random grid\n');
 mygrid.drawGrid();
 
+
+//a static grid initilized with a predefined static grid
 console.log('\nA static grid\n');
 mygrid = twgrid({grid: [[1,2,3], [4,5,6]]});
 mygrid.drawGrid();
 
 
+//a random grid initilaized with hardcoded default values
 console.log('a hardcoded random grid')
 mygrid = twgrid();;
 //Draw the grid
